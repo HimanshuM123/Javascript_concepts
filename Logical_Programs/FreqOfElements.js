@@ -14,6 +14,6 @@ function countWorld(p){
 }
 
 console.log(countWorld(arr));
-
+//{ hello: 2, world: 1, java: 2 }
 
 //https://blog.bitsrc.io/most-important-javascript-coding-challenge-aa14c956d2df
