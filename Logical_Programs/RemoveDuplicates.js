@@ -11,4 +11,15 @@ function unique (arr){
   
 }
 
-console.log(unique(arr));
+function unique2 (arr){
+    let items =[];
+    arr.forEach((item)=>{
+        if(!items[item])  {
+            items.push(item);
+        }
+    })
+  return items;
+  
+}
+
+console.log(unique2(arr));

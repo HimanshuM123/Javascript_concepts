@@ -1,22 +1,22 @@
-let arr =["hello","world","java","hello","java"];
+let arr =[1,1,6,3,9,2,9,0,5,0,1];
 
 
- function freq(ar){
+function printDuplicates(ar){
 
-    let myObj ={};
+    let mySet ={};
+    let res =[];
 
-    ar.forEach(ele => {
-        if(myObj[ele]){
-            myObj[ele]++;
+    ar.forEach((item)=>{
+        if(mySet[item]===1){
+            res.push(item);
+            mySet[item]++;
         }else{
-            myObj[ele]=1; 
+            mySet[item]=1;
         }
-
-    });
-
-    return myObj;
+    })
+return res;
 }
 
+var result  = printDuplicates(arr);
 
-
-console.log(freq(arr));
+console.log(result)
